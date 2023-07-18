@@ -28,9 +28,32 @@
         2. Manipulate the DOM node by changing its attributes, styles, inner HTML, or appending new nodes to it.
         */
         // document.body
+        // https://stackoverflow.com/questions/8318591/javascript-addeventlistener-using-to-create-a-mouseover-effect
         var four = 2 + 2;
         console.log("Wheeee!"); // cmd-opt-I, ctrl-option-I 
         document.body.innerHTML = "Woooo, I'm all up in your webpage!";
+        var drawBuble = function(bubX, bubY, title) {
+            noStroke();
+            fill(222, 120, 171);
+            var diam = 100;
+            ellipse(bubX, bubY, diam, diam); 
+            fill(0, 0, 0);
+            textSize(diam/3);
+            text(title, bubX-diam/3, bubY-diam/10);
+            
+        };
+
+        
+        fill(0,0,0);
+        line(200,200,70,119);
+        line(200,200,300,60);
+        line(200,200,297,350);
+        
+        drawMole(200,200, 'paper 1');
+        drawMole(70,119, 'paper 2');
+        drawMole(300,60, 'paper 3');
+        drawMole(297,350, 'paper 4');
+        
     </script>
 
     
