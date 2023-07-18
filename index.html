@@ -16,7 +16,7 @@
     </head>
     <body>
 
-    <h1>second title here</h1>
+    <h1 id="heading" >second title here</h1>
     
     <h2>source code</h2>
     
@@ -29,8 +29,8 @@
         */
         // document.body
         // https://stackoverflow.com/questions/8318591/javascript-addeventlistener-using-to-create-a-mouseover-effect
-        var four = 2 + 2;
-        console.log("Wheeee!"); // cmd-opt-I, ctrl-option-I 
+        var headingEl = document.getElementById("heading");
+        headingEl.innerHTML = 'STEP Validation Project: Data Organization';
         document.body.innerHTML = "Woooo, I'm all up in your webpage!";
         var drawBuble = function(bubX, bubY, title) {
             noStroke();
