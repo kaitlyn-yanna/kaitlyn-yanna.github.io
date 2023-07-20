@@ -1,88 +1,100 @@
-/*
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset='utf-8'>
-        <title>STEP Validation Project: Data Organization</title>
-    </head>
-    <body>
-        <p> https://www.khanacademy.org/computing/computer-programming/html-css/web-development-tools/a/hosting-your-website-on-github </p>
-    </body>
-</html>
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
         <title>STEP Validation Project: Data Organization</title>
+        <style>
+            body {
+                background-color: white;
+                padding:10px;
+            }
+            .bubble {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                text-align: center;
+                vertical-align: super;
+                padding: 10px;
+                position: absolute;
+            }
+            
+            .line {
+                border-bottom: 3px solid rgb(0, 0, 0);
+                width: 23%;
+                transform: rotate(138deg);
+                transform-origin: left;
+                position: fixed;
+                
+            }
+            
+        </style>
     </head>
     <body>
-
-    <h1 id="heading" >second title here</h1>
-    
-    <h2>source code</h2>
-    
-    <p>https://www.khanacademy.org/computing/computer-programming/html-css/web-development-tools/a/hosting-your-website-on-github</p>
+        <h1 id="heading"> Data Organization</h1>
     
     <script>
-        /* 
-        1. Find the DOM node using an access method.
-        2. Manipulate the DOM node by changing its attributes, styles, inner HTML, or appending new nodes to it.
-        */
-        // document.body
-        // https://stackoverflow.com/questions/8318591/javascript-addeventlistener-using-to-create-a-mouseover-effect
         var headingEl = document.getElementById("heading");
-        headingEl.innerHTML = 'STEP Validation Project: Data Organization';
-        document.body.innerHTML = "Woooo, I'm all up in your webpage!!";
-        document.body.innerHTML = "Woot woot!";
-        var drawBuble = function(bubX, bubY, title) {
-            noStroke();
-            fill(222, 120, 171);
-            var diam = 100;
-            ellipse(bubX, bubY, diam, diam); 
-            fill(0, 0, 0);
-            textSize(diam/3);
-            text(title, bubX-diam/3, bubY-diam/10);
-            
-        };
+        console.log(headingEl);
+        // cmd-option-i , ctrl-shift-i 
+        headingEl.innerHTML = "Data Organization";
+ 
+        var linEl = document.createElement('div');
+        linEl.className = 'line';
+        //bubbleEl.style.position = 'fixed';
+        linEl.style.top = '43%';
+        linEl.style.left = '50%';
+        linEl.style.transform = 'rotate(155deg)';
+        linEl.style.width = '34%';
+        document.body.appendChild(linEl);
         
+        var linEl = document.createElement('div');
+        linEl.className = 'line';
+        //bubbleEl.style.position = 'fixed';
+        linEl.style.top = '43%';
+        linEl.style.left = '50%';
+        linEl.style.transform = 'rotate(39deg)';
+        linEl.style.width = '34%';
+        document.body.appendChild(linEl);
+        
+        var bubbleEl = document.createElement('div');
+        bubbleEl.className = 'bubble';
+        bubbleEl.style.backgroundColor = 'hotpink';
+        bubbleEl.style.position = 'fixed';
+        bubbleEl.style.top = '30%';
+        bubbleEl.style.left = '40%';
+        bubbleEl.innerHTML = 'Title 1 here is a long title just to see what it does i think it will turn out alright but here we are'
+        document.body.appendChild(bubbleEl);
+ 
+        var bubbleEl = document.createElement('div');
+        bubbleEl.className = 'bubble';
+        bubbleEl.style.backgroundColor = 'pink';
+        bubbleEl.style.position = 'fixed';
+        bubbleEl.style.top = '60%';
+        bubbleEl.style.left = '70%';
+        bubbleEl.innerHTML = 'Title 2'
+        document.body.appendChild(bubbleEl);
+        
+        var bubbleEl = document.createElement('div');
+        bubbleEl.className = 'bubble';
+        bubbleEl.style.backgroundColor = 'pink';
+        bubbleEl.style.position = 'fixed';
+        bubbleEl.style.top = '50%';
+        bubbleEl.style.left = '10%';
+        bubbleEl.innerHTML = 'Title 2'
+        document.body.appendChild(bubbleEl);
+        
+        
+        
+        /*
+        width: 10px;
+        height: 30px;
+        background: rgb(0, 0, 0);
         
         fill(0,0,0);
         line(200,200,70,119);
         line(200,200,300,60);
         line(200,200,297,350);
-        
-        drawMole(200,200, 'paper 1');
-        drawMole(70,119, 'paper 2');
-        drawMole(300,60, 'paper 3');
-        drawMole(297,350, 'paper 4');
-        
-    </script>
-
-    
-    </body>
-</html>
-*/
-
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>STEP Validation Project: Data Organization</title>
-    </head>
-    <body>
-
-        <h1 id="heading"Data Organization</h1>
-        
-        <script>
-        /* 
-        1. Find the DOM node using an access method.
-        2. Manipulate the DOM node by changing its attributes, styles, inner HTML, or appending new nodes to it.
         */
-        // document.body
-        var headingEl = document.getElementById("heading");
-        console.log(headingEl);
-        // cmd-option-i , ctrl-shift-i 
-        headingEl.innerHTML = "All about cats";
-        </script>
+    </script>
     </body>
 </html>
