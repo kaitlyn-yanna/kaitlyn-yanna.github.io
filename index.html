@@ -8,12 +8,51 @@
                 background-color: white;
                 padding:10px;
             }
+
+            ul {
+              list-style-type: none;
+              margin: 0;
+              padding: 0;
+              overflow: hidden;
+              border: 1px solid #e7e7e7;
+              background-color: #f3f3f3;
+              position: -webkit-sticky; /* Safari */
+              position: sticky;
+              top: 0;
+            }
+            
+            li {
+              float: left;
+            }
+            
+            li a {
+              display: block;
+              color: #666;
+              text-align: center;
+              padding: 14px 16px;
+              text-decoration: none;
+            }
+            
+            li a:hover:not(.active) {
+              background-color: #ddd;
+            }
+            
+            li a.active {
+              color: white;
+              background-color: #04AA6D;
+            }
             
         </style>
     </head>
     <body>
         <h1 id="heading">Kaitlyn Yanna</h1>
-    
+        <ul>
+          <li><a class="active" href="#home">Home</a></li>
+          <li><a href="#research_projects">Research Projects</a></li>
+          <li><a href="#conferences">Conferences</a></li>
+          <li><a href="#cv">CV</a></li>
+          <li><a href="#personal_projects">Personal Projects</a></li>
+        </ul>
     <script>
         var headingEl = document.getElementById("heading");
         console.log(headingEl);
