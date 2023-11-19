@@ -2,29 +2,11 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>STEP Validation Project: Data Organization</title>
+        <title>K. Yanna</title>
         <style>
             body {
                 background-color: white;
                 padding:10px;
-            }
-            .bubble {
-                width: 100px;
-                height: 100px;
-                border-radius: 50%;
-                text-align: center;
-                vertical-align: super;
-                padding: 10px;
-                position: absolute;
-            }
-            
-            .line {
-                border-bottom: 3px solid rgb(0, 0, 0);
-                width: 23%;
-                transform: rotate(138deg);
-                transform-origin: left;
-                position: fixed;
-                
             }
             
         </style>
@@ -36,75 +18,9 @@
         var headingEl = document.getElementById("heading");
         console.log(headingEl);
         // cmd-option-i , ctrl-shift-i 
-        headingEl.innerHTML = "Data Organization";
-        
-        var top1 = '50%'
-        var left1 = '50%'
- var bubbleEl = document.createElement('div');
-        bubbleEl.className = 'bubble';
-        bubbleEl.style.backgroundColor = 'hotpink';
-        bubbleEl.style.position = 'fixed';
-        bubbleEl.style.top = top1;
-        bubbleEl.style.left = left1;
-        bubbleEl.innerHTML = 'Progress in GYRO validation studies
-of DIII-D H-mode plasmas'
-        document.body.appendChild(bubbleEl);
-        
-        var linEl = document.createElement('div');
-        linEl.className = 'line';
-        //bubbleEl.style.position = 'fixed';
-        linEl.style.top = '50%'; // add 15
-        linEl.style.left = '50%'; // add 10
-        linEl.style.transform = 'rotate(160deg)';
-        linEl.style.width = '34%';
-        document.body.appendChild(linEl);
-        
-        var linEl = document.createElement('div');
-        linEl.className = 'line';
-        //bubbleEl.style.position = 'fixed';
-        linEl.style.top = '65%';
-        linEl.style.left = '60%';
-        linEl.style.transform = 'rotate(39deg)';
-        linEl.style.width = '34%';
-        document.body.appendChild(linEl);
+        headingEl.innerHTML = "Kaitlyn Yanna";
         
         
- 
-        var bubbleEl = document.createElement('div');
-        bubbleEl.className = 'bubble';
-        bubbleEl.style.backgroundColor = 'pink';
-        bubbleEl.style.position = 'fixed';
-        bubbleEl.style.top = '60%';
-        bubbleEl.style.left = '70%';
-        bubbleEl.innerHTML = 'Title 2'
-        document.body.appendChild(bubbleEl);
-        
-        var bubbleEl = document.createElement('div');
-        bubbleEl.className = 'bubble';
-        bubbleEl.style.backgroundColor = 'pink';
-        bubbleEl.style.position = 'fixed';
-        bubbleEl.style.top = '50%';
-        bubbleEl.style.left = '10%';
-        bubbleEl.innerHTML = 'Title 2'
-        document.body.appendChild(bubbleEl);
-        
-        /*
-        https://stackoverflow.com/questions/8318591/javascript-addeventlistener-using-to-create-a-mouseover-effect 
-        
-        var item = document.getElementById("button");
-item.addEventListener("mouseover", func, false);
-item.addEventListener("mouseout", func1, false);
-
-function func()
-{  
-   item.setAttribute("style", "background-color:blue;")
-}
-
-function func1()
-{  
-   item.setAttribute("style", "background-color:green;")
-}
-        */
         
     </script>
     </body>
