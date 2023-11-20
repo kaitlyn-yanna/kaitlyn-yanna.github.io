@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html>
     <head>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
         <meta charset="utf-8">
         <title>Kaitlyn Yanna</title>
         <style>
             body {
                 background-color: white;
                 padding:10px;
+                font-family: "Helvetica", sans-serif;
+                font-size: 20px;
             }
 
-            ul {
+            .menuu{
               list-style-type: none;
               margin: 0;
               padding: 0;
@@ -20,12 +24,9 @@
               position: sticky;
               top: 0;
             }
-            
-            li {
+
+            li a.menu {
               float: left;
-            }
-            
-            li a {
               display: block;
               color: #666;
               text-align: center;
@@ -48,15 +49,17 @@
     <body>       
         <img src="/kaitlyn_yanna_header.png" class="center" width="100%">
         
-        <ul>
-          <li><a class="active" href="#home">Home</a></li>
-          <li><a href="#research_projects">Research Projects</a></li>
-          <li><a href="#conferences">Conferences</a></li>
-          <li><a href="#cv">CV</a></li>
-          <li><a href="#personal_projects">Personal Projects</a></li>
+        <ul class = "menuu">
+          <li><a  class = "menu" class="active" href="#home">Home</a></li>
+          <li><a  class = "menu" href="#research_projects">Research Projects</a></li>
+          <li><a  class = "menu" href="#conferences">Conferences</a></li>
+          <li><a  class = "menu" href="#cv">CV</a></li>
+          <li><a  class = "menu" href="#personal_projects">Personal Projects</a></li>
+        </li>
         </ul>
-
-        <div id ="home">
+        
+        <div id="home">
+        <br>
         <h1>Home</h1>
         <h2>Hello!</h2>
         <p>My name is Kaitlyn Yanna and I am currently a junior double 
@@ -65,30 +68,103 @@
            mitigate the climate crisis. After graduation, I am interested 
            in pursuing a doctorate degree in Plasma Physics and becoming a
             Senior Researcher. I am excited for my work to contribute to a better world!!</p>
-        </div>
+          </div>
 
-        <div id="research_projects">
+          <div id ="research_projects">
+            <br><br><hr>
+          </div>
+        <!--<div id="research_projects"> -->
             <h1>Research Projects</h1>
-            <p></p>
+            <p>Currently I am working towards validating STEP, as well as collaborating
+                with experimental teams at the TJ-II stellarator for characterizing the phase 
+                difference between the density and electrostatic potential with the heavy 
+                ion beam probe diagnostic to study how plasmas lose energy via turbulence. <br>
+              </p>
+              <p>
+                I have worked on several projects in physics and engineering with 
+                a strong focus on <strong>modeling</strong>, <strong>experimental validation</strong>, 
+                and <strong>optimization</strong>. Below is a list of projects I have been involved with:
+                <ul>
+                    <li><a href="#sparc">Modeling an ECE Diagnostic for SPARC</a></li> 
+                    <li><a href="#phase_diff">Characterizing the phase difference between the density and electrostatic potential in TJ-II</a></li>
+                    <li><a href="#step">STEP Validation</a></li> 
+                    <li><a href="#degrade">Degradation of Plasma Facing Mirrors in ASDEX Upgrade</a></li>
+                    <li><a href="#thomson">Thomson-ECE Discrepancy</a></li> 
+                  </li>
+                  </ul>
+            </p>
+            
+            <div id = "sparc">
+            <h3>Modeling an ECE Diagnostic for SPARC</h3>
+            <p> Through the Undergraduate Research Opportunities Program (UROP), I designed an ECE diagnostic 
+              for SPARC at the Plasma Science & Fusion Center under the guidance of Prof. Anne White and Dr. Nathan Howard. 
+              I edited and wrote data-verified code in Python to assess analytic theory for predicting 
+              and modeling the optical system and its gaussian beam parameters. In doing so, I engineered 
+              solutions within physical and spatial restraints in collaboration with other researchers. </p>
+            <p>
+            </div>
+
+            <div id = "phase_diff">
+            <h3>Characterizing the phase difference between the density and electrostatic potential in TJ-II</h3>
+            <p>
+            Through MIT International Science and Technology Initiatives (MISTI), I conducted research under the guidance of Dr. Arturo 
+            Alonso. Specifically, I characterized the phase difference between the density and electrostatic 
+            potential in the TJ-II stellarator with the heavy ion beam probe diagnostic to study how plasmas lose energy via turbulence. 
+            In doing so, I created and improved MATLAB codes to realize that the data is approaching the necessary quality to do this 
+            characterization. I also produced easily-readable graphs that inspired and informed future experimental campaigns.
+            </p>
+            </div>
+
+            <div id = "step">
+            <h3>STEP Validation</h3>
+            <p>
+            In collaboration with Prof. White and Dr. Chris Holland, I have reviewed hundreds of scholarly papers about 
+            tokamaks to validate STEP against any published temperature profile. I am validating STEP against this data 
+            to determine how effective STEP is for designing future reactors.
+            </p>
+            </div>
+
+            <div id = "degrade">
+            <h3>Degradation of Plasma Facing Mirrors in ASDEX Upgrade</h3>
+            <p>
+            Under the supervision of Prof. White, I conducted research on the degradation of plasma facing mirrors used 
+            in ECE by designing and running experiments on a replica of ASDEX’s optical system to model gaussian beam 
+            parameters to verify the model with collected and analyzed data.
+            </p>
+            </div>
+
+            <div id = "thomson">
+            <h3>Thomson-ECE Discrepancy</h3>
+            <p>
+            Under the supervision of Prof. White, I reviewed academic papers about ECE diagnostics to conduct research 
+            on the Thomson-ECE Discrepancy to learn how to interpret data from ECE diagnostics.
+            </p>
+            </div>
         </div>
         
         <div id="Conferences">
             <h1>Conferences</h1>
-            <p></p>
+            <p>The following is a list of conferences I have attended:</p>
+            <p><strong>APS 2023, <a href="/K_Yanna_APS_2023.pdf">poster</a>.</strong> “Study of the phase difference between turbulent density and 
+              electrostatic potential fluctuations in the TJ-II stellarator”, 65th Annual Meeting of the APS Division of Plasma Physics, Denver (CO), Oct 30 – Nov 3 2023.</p>
         </div>
 
         <div id="cv">
             <h1>CV</h1>
-            <p></p>
+            <p>To learn more about my academic career, please click on my <a href="/K_Yanna_CV.pdf">CV</a>.</p>
         </div>
 
         <div id="personal_projects">
             <h1>Personal Projects</h1>
-            <p></p>
+            <p>
+            <ul>
+              <li> Crochet </li>
+              <li> Ballroom Dancing </li>
+              <li> Baking Macarons </li>
+            </p>
         </div>
 
     <script>
-                
     </script>
     </body>
 </html>
