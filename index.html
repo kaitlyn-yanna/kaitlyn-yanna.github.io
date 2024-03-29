@@ -11,15 +11,11 @@
               padding:10px;
               font-family: "Helvetica", sans-serif;
               font-size: 20px;
-            }
-            
-            p {
-              padding: 8px;
               margin: 25px;
             }
             
             .parallax {
-              background-image: url("./palm_trees.png");
+              background-image: url("/palm_trees.png");
 
               /* Set dimensions */
               height:500px;
@@ -62,6 +58,25 @@
               background-color: #04AA6D;
             }
 
+            .container {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              display: flex;
+            }
+
+            .imgL {
+              max-width: 80%;
+              max-height:80%;
+              float: left;
+            }
+          
+            .textL {
+              padding-left: 20px;
+              padding-top: 20%;
+              float: left;
+            }
+
         </style>
     </head>
     
@@ -85,20 +100,25 @@
         <div id="home">
         <br>
         <h2>Hello!!</h2>
-        <p>I'm Kaitlyn!! I'm fascinated by turbulence in fusion devices as a way to achieve fusion energy. After graduation, I am interested in pursuing a doctorate degree in Plasma Physics and eventually becoming a Senior Researcher. I am excited for my work to contribute to a better world!! 
-        </br>
-        I'm currently double majoring in Nuclear Science & Engineering and Global Studies and Languages (Spanish) @ MIT</p>
+        <p>I'm Kaitlyn!! I'm fascinated by turbulence in fusion devices as a way to achieve fusion energy. After graduation, I am interested in pursuing a doctorate degree in Plasma Physics and eventually becoming a Senior Researcher. I am excited for my work to contribute to a better world!!</p> 
+        <br>
+        <p>I'm currently double majoring in Nuclear Science & Engineering and Global Studies and Languages (Spanish) @ MIT</p>
+        </div>
+
+        <div class="container">
+          <div class="imgL">
+            <img src="./me_segovia">
+          </div>
+          <div class="textL">
+            <h1>Me in Segovia, Spain enjoying the aqueduct!!</h1>
+          </div>
         </div>
 
           <div id ="research_projects">
             <br><br>
           </div>
-        <!--<div id="research_projects"> -->
-            <h1>Research Projects</h1>
-            <p>Currently I am working towards validating STEP, as well as collaborating
-                with experimental teams at the TJ-II stellarator for characterizing the phase 
-                difference between the density and electrostatic potential with the heavy 
-                ion beam probe diagnostic to study how plasmas lose energy via turbulence. <br>
+            <h1>Currently</h1>
+            <p>I'm working towards validating STEP against a plethora of historical experimental data to see if it can accurately predict the ion and electron temperature profiles. <br>
               </p>
               <p>
                 I have worked on several projects in physics and engineering with 
