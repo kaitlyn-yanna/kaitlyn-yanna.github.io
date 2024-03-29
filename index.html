@@ -18,12 +18,18 @@
             .parallax {
               background-image: url("./palm_trees.png");
               height:500px;
-
-              /* Create the parallax scrolling effect */
-              background-attachment: fixed;
+              margin: 0;
+              background-attachment: fixed; /* Create the parallax scrolling effect */
               background-position: center;
               background-repeat: no-repeat;
               background-size: cover;
+            }
+
+            #header{
+              position: absolute;
+              z-index: 1000;
+              top: 200px;
+              left: 200px;
             }
 
             .menuu{
@@ -79,6 +85,7 @@
     </head>
     
     <body>
+        <h1 id="header">Text</h1>
         <div class="parallax"></div>
         <div style="height:500px; background-color:green; font-size:36px; text-align:center"></br>
         </br>
