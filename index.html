@@ -26,8 +26,10 @@
             }
 
             h2 {
-              padding-left:20px;
-              margin-left: 25px;
+              /* padding-left:20px; */
+              /* margin-left: 25px; */
+              padding-right:10px; 
+              margin-right: 25px;
             }
             
             h3 {
@@ -37,14 +39,15 @@
 
             .Feature {
               position: relative;
-            	height: 100vh;
+              height: 100vh;
               width: 100%;
               overflow: hidden;
             	.image {
             		height: 100%;
             		width: 100%;
-            		background: url(https://d2sb2la3kejgs3.cloudfront.net/Projects/YBCA-BAN8/Mobile/_800xAUTO_crop_center-center_none/BAN8_Home_Hero_M_Crop_1387x3000.jpg);
-            		background-size: cover;	
+            		/*background: url(https://d2sb2la3kejgs3.cloudfront.net/Projects/YBCA-BAN8/Mobile/_800xAUTO_crop_center-center_none/BAN8_Home_Hero_M_Crop_1387x3000.jpg); */
+            		background-image: url("./palm_trees.png");
+                    background-size: cover;	
             		background-position: 50% 50%;
             	}
             	.Feature-content {
@@ -64,49 +67,18 @@
             			transform: translate(-50%,-50%);
             			z-index: 3;
             			h2, h4 {
-            				font-size: 30px;
+            				font-size: 80px; /* was 30px */
             				color: white;
             				z-index: 3;
+                            color: white;
             			}
             			h4 {
-            				top: calc(50% + 80px);
-            				font-size: 15px; 
+            				top: calc(50% - 160px); /* was 50% + 80px */
+            				font-size: 30px; /* was 15px */ 
+                            color: white;
             			}
             		}
             	}
-            }
-
-            
-            .parallax {
-              background-image: url("./palm_trees.png");
-              height:500px;
-              margin: 0px;
-              padding: 0px;
-              background-attachment: fixed; /* Create the parallax scrolling effect */
-              background-position: justify; /* was center */
-              background-repeat: no-repeat;
-              background-size: cover;
-              z-index: 0;
-              position: relative;
-            }
-
-            .header2{
-              position: fixed;
-              z-index: 1;
-              text-align: center;
-              color: white;
-              padding-left: 10px;
-              margin-left: 25px;
-            }
-
-            .header1{
-              position: fixed;
-              z-index: 1;
-              text-align: center;
-              color: white;
-              font-size: 40px;
-              padding-left:10px;
-              margin-left: 25px;
             }
 
             .menuu{
@@ -182,15 +154,11 @@
         	<div class="image"></div>
         	<div class="Feature-content">
         		<div class="Feature-title"> 
-        			<h2>This is a title</h2>
-        			<h4>at the top</h4>
+                    <h4>Hey!! I'm</h4>
+        			<h2>KAITLYN YANNA</h2>
         		</div>
         		</div>
         </div>
-        
-        <h2 class = "header2">Hey!! I'm</h2>
-        <h1 class = "header1">KAITLYN YANNA</h1>
-        <div class="parallax"></div>
         
         <ul class = "menuu">
           <li><a  class = "menu" class="active" href="#home">Home</a></li>
