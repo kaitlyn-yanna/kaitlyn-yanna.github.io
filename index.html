@@ -14,18 +14,18 @@
             }
 
             p {
-              padding:10px;
-              margin: 25px;
+              padding-left:10px;
+              margin-left: 25px;
             }
 
             h1 {
-              padding:10px;
-              margin: 25px;
+              padding-left:10px;
+              margin-left: 25px;
             }
 
             h2 {
-              padding:10px;
-              margin: 25px;
+              padding-left:10px;
+              margin-left: 25px;
             }
             
             .parallax {
@@ -52,6 +52,8 @@
               text-align: center;
               color: white;
               font-size: 40px;
+              padding-left:10px;
+              margin-left: 25px;
             }
 
             .menuu{
@@ -84,23 +86,38 @@
               background-color: #04AA6D;
             }
 
-            .container {
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              display: flex;
+            /* Create three unequal columns that floats next to each other */
+            .column {
+              float: left;
+              padding: 10px;
+            }
+            
+            /* Left and right column */
+            .column.sideL {
+              width: 13.5%;
             }
 
-            .imgL {
-              max-width: 20%;
-              max-height: 20%;
-              float: left;
+            .column.sideR {
+              width: 25%;
             }
-          
-            .textL {
-              padding-left: 20px;
-              padding-top: 20%;
-              float: left;
+            
+            /* Middle column */
+            .column.middle {
+              width: 50%;
+            }
+            
+            /* Clear floats after the columns */
+            .row::after {
+              content: "";
+              display: table;
+              clear: both;
+            }
+            
+            /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+            @media screen and (max-width: 600px) {
+              .column.side, .column.middle {
+                width: 100%;
+              }
             }
 
         </style>
@@ -127,14 +144,23 @@
         <p>I'm Kaitlyn!! I'm fascinated by turbulence in fusion devices as a way to achieve fusion energy. After graduation, I am interested in pursuing a doctorate degree in Plasma Physics and eventually becoming a Senior Researcher. I am excited for my work to contribute to a better world!!</p> 
         <br>
         <p>I'm currently double majoring in Nuclear Science & Engineering and Global Studies and Languages (Spanish) @ MIT</p>
-        <div class = "container">
-          <div class = "imgL">
-            <img src = "./me_segovia.png">
+        <div class="row">
+            <!-- empty column on thhe left-->
+          <div class="column sideL">
+            <h2></h2>
+            <p></p>
           </div>
-          <div class = "textL">
-            <p>Me in Segovia, Spain enjoying the aqueduct!!</p>
+          
+          <div class="column middle">
+            <h2>Main Content</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
           </div>
-        </div>
+          
+          <div class="column side">
+            <h2>Side</h2>
+            <p>Lorem ipsum dolor sit amet, consecteturrr adipiscing elit..</p>
+          </div>
         </div>
 
           <div id ="research_projects">
