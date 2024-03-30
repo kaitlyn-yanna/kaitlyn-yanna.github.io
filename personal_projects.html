@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <meta charset="utf-8">
+        <title>Kaitlyn Yanna</title>
+        <link rel="icon" type="image/jpg" href="./favicon.jpg">
+        <style>
+          body {
+              background-color: white;
+              font-family: "Helvetica", sans-serif;
+              font-size: 20px;
+            }
+
+            p {
+              padding-left:10px;   
+              margin-left: 25px; 
+              padding-right:10px; 
+              margin-right: 25px;
+            }
+
+            h1 {
+              padding-left: 20px;
+              margin-left: 25px;
+              color: #6c7b34;
+            }
+
+            h2 {
+              padding-left:20px;
+              margin-left: 25px; 
+              padding-right:10px; 
+              margin-right: 25px;
+            }
+            
+            h3 {
+              padding-left:20px;
+              margin-left: 25px;
+              padding-right:10px; 
+              margin-right: 25px;
+            }
+
+            a {
+                text-decoration: none;
+            }
+            /* parallax boi*/
+            .Feature {
+              position: relative;
+              height: 100vh;
+              width: 100%;
+              overflow: hidden;
+            	.image {
+            		height: 100%;
+            		width: 100%;
+            		/*background: url(https://d2sb2la3kejgs3.cloudfront.net/Projects/YBCA-BAN8/Mobile/_800xAUTO_crop_center-center_none/BAN8_Home_Hero_M_Crop_1387x3000.jpg); */
+            		background-image: url("./palm_trees.png");
+                    background-size: cover;	
+            		background-position: 50% 50%;
+            	}
+            	.Feature-content {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                clip: rect(0,auto,auto,0);
+                background-position: 50%;
+                background-size: cover;
+            		.Feature-title {
+            			position: fixed;
+            			top: 50%;
+            			left: 50%;
+            			transform: translate(-50%,-50%);
+            			z-index: 3;
+            			h2, h3 {
+            				font-size: 80px; /* was 30px */
+            				color: white;
+            				z-index: 3;
+                            color: white;
+                            padding: 0;
+                            margin: 0;
+            			}
+            			h3 {
+            				top: calc(50% - 160px); /* was 50% + 80px */
+            				font-size: 50px; /* was 15px */ 
+                            color: white;
+                            padding: 0;
+                            margin: 0;
+            			}
+            		}
+            	}
+            }
+
+            .menuu{
+              list-style-type: none;
+              margin: 0;
+              padding: 0;
+              overflow: hidden;
+              border: 1px solid #e7e7e7;
+              background-color: #f3f3f3;
+              position: -webkit-sticky; /* Safari */
+              position: sticky;
+              top: 0;
+              z-index: 5;
+            }
+
+            li a.menu {
+              float: left;
+              display: block;
+              color: #666;
+              text-align: center;
+              padding: 14px 16px;
+              text-decoration: none;
+            }
+            
+            li a:hover:not(.active) {
+              background-color: #ddd;
+            }
+            
+            li a.active {
+              color: white;
+              background-color: #04AA6D;
+            }
+
+            /* Create three unequal columns that floats next to each other */
+            .column {
+              float: left;
+              padding: 10px;
+            }
+            
+            /* Left and right column */
+            .column.sideL {
+              width: 13.5%;
+            }
+
+            .column.sideR {
+              width: 25%;
+            }
+            
+            /* Middle column */
+            .column.middle {
+              width: 50%;
+            }
+            
+            /* Clear floats after the columns */
+            .row::after {
+              content: "";
+              display: table;
+              clear: both;
+            }
+            
+            /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+            @media screen and (max-width: 600px) {
+              .column.side, .column.middle {
+                width: 100%;
+              }
+            }
+
+        </style>
+    </head>
+    
+    <body>
+        <div class="Feature">
+        	<div class="image"></div>
+        	<div class="Feature-content">
+        		<div class="Feature-title"> 
+                    <h3>Hey!! I'm</h3>
+        			<h2>Kaitlyn Yanna</h2>
+        		</div>
+        		</div>
+        </div>
+        
+        <ul class = "menuu">
+          <li><a  class = "menu" href="#home">Home</a></li>
+          <li><a  class = "menu" href="#research_projects">Research Projects</a></li>
+          <li><a  class = "menu" href="./conferences.html">Conferences</a></li>
+          <li><a  class = "menu" href="./cv_&_awards.html">CV & Awards</a></li>
+          <li><a  class = "menu" class="active" href="./personal_projects.html">Personal Projects</a></li>
+        </li>
+        </ul>
+        <br>
+    <h1 style="text-align: center;">Personal Projects</h1>
+        <br>
+
+            <div class="row">
+            <!-- empty column on thhe left-->
+          <div class="column sideL">
+            <h2></h2>
+            <p></p>
+          </div>
+          
+          <div class="column middle">
+              <p>
+            <ul>
+              <li> Crochet </li>
+              <li> Ballroom Dancing </li>
+              <li> Baking Macarons </li>
+            </ul>
+            Stay tuned for updates!!!
+            </p>
+          </div>
+          
+          <div class="column sideR">
+            <h2></h2>
+           </div>
+        </div>
+          
+        <br><br><br><br><br>
+        <script>
+    </script>
+  </body>
+</html> 
